@@ -62,7 +62,7 @@
 
 
 <div class="map-home">
-  <iframe src="https://www.google.com/maps/embed?pb=!4v1767878712908!6m8!1m7!1sI8mu1bxRPbt71ky28YRi1A!2m2!1d-29.61920376538636!2d-52.20240701780288!3f97.94978!4f0!5f0.7820865974627469" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3468.465377682445!2d-52.2022858!3d-29.619224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951c900f5a6815ad%3A0x4a72ce527830fc93!2sR.%20Herval%20Mirim%2C%20499%20-%20Gressler%2C%20Ven%C3%A2ncio%20Aires%20-%20RS%2C%2095800-000!5e0!3m2!1spt-BR!2sbr!4v1767893769315!5m2!1spt-BR!2sbr" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 
 <?php /*
