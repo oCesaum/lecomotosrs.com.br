@@ -8,7 +8,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<?php $title = $title ? $title.' - Lucas Automóveis':'Lucas Automóveis - Bom Retiro do Sul/RS'; ?>
+	<?php $title = $title ? $title.' - Leco Motos':'Leco Motos - Bom Retiro do Sul/RS'; ?>
 	<title><?php echo $title; ?></title>
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans:300,400,600,700,800">
@@ -87,12 +87,12 @@ src="https://www.facebook.com/tr?id=303577118019952&ev=PageView&noscript=1"
 	<header>
 		<div class="container">
 			<h1 class="logo">
-				<a href="<?php echo site_url(''); ?>">Lucas Automóveis</a>
+				<a href="<?php echo site_url(''); ?>">Leco Motos</a>
 			</h1>
 
 			<div class="header-contact">
 				<p>Bom Retiro do Sul/RS</p>
-				<p><a target="_blank" href="https://api.whatsapp.com/send?phone=5551997380151" class="header-whatsapp">(51) 99738-0151</a></p>
+				<p><a target="_blank" href="https://api.whatsapp.com/send?phone=5551994537661" class="header-whatsapp">(51) 99453-7661</a></p>
 			</div>
 
 		</div>
@@ -134,7 +134,7 @@ src="https://www.facebook.com/tr?id=303577118019952&ev=PageView&noscript=1"
 <div class="showcase">
 <!--
 	<div class="showcase-text">
-		<h2>Lucas Automóveis</h2>
+		<h2>Leco Motos</h2>
 		<h3>Revenda de carros multimarcas</h3>
 	</div>
 -->
@@ -241,17 +241,17 @@ src="https://www.facebook.com/tr?id=303577118019952&ev=PageView&noscript=1"
 <footer>
   <div class="container">
     <div class="footer-content">
-  		<h6><a href="<?php echo site_url(''); ?>">Lucas Automóveis</a></h6>
+  		<h6><a href="<?php echo site_url(''); ?>">Leco Motos</a></h6>
   		<div class="address">
   		<address>
-  			Rua Senador Pinheiro Machado, 3030<br>
-  			Bom Retiro do Sul/RS
+				Rua Herval Mirim, 499 - Gressler<br>
+  			Venâncio Aires/RS
   		</address>
   		<!-- <a href="mailto:email@email.com.br">email@email.com.br</a> -->
   		</div>
   		<div class="contact">
   			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" /></svg>
-  			<a target="_blank" href="https://api.whatsapp.com/send?phone=5551997380151" class="footer-whatsapp">51 <strong>99738 0151</strong></a><br>
+  			<a target="_blank" href="https://api.whatsapp.com/send?phone=5551994537661" class="footer-whatsapp">51 <strong>99453 7661</strong></a><br>
   		</div>
   		<!-- <div class="fb-widget-container"> -->
   			<!-- (Facebook) -->
@@ -260,7 +260,7 @@ src="https://www.facebook.com/tr?id=303577118019952&ev=PageView&noscript=1"
 	</div>
 </footer>
 
-<a target="_blank" href="https://api.whatsapp.com/send?phone=5551997380151"><div class="bt-whats_fixo">
+<a target="_blank" href="https://api.whatsapp.com/send?phone=5551994537661"><div class="bt-whats_fixo">
 	<i></i> Deixe uma mensagem
 </div></a>
 

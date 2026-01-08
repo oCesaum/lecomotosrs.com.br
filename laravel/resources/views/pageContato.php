@@ -10,10 +10,10 @@
     <div class="row">
 
       <div class="col-md-6">
-        <p>Utilize o formulário abaixo para entrar em contato ou pelo WhatsApp (51) 99738-0151</p>
+        <p>Utilize o formulário abaixo para entrar em contato ou pelo WhatsApp (51) 99453-7661</p>
 
         <form method="post" action="<?php echo site_url('contato'); ?>" class="contact-form" id="contact-form">
-          <input name="action" value="jlautomoveis_contato" type="hidden">
+          <input name="action" value="lecomotosrs_contato" type="hidden">
           <input name="_token" value="<?php echo csrf_token(); ?>" type="hidden">
           <span class="trap"><input type="text" name="trap"></span>
           <h4>Fale conosco</h4>
@@ -60,11 +60,11 @@
       </div>
       <div class="col-md-1"></div>
       <div class="col-md-5">
-        <h5>Lucas Automóveis</h5>
-        <!-- <p>Fone: (51) 99738-0151</p> -->
-        <p>Rua Senador Pinheiro Machado, 3030</p>
-        <p>Bom Retiro do Sul/RS</p>
-        <p><a target="_blank" href="https://api.whatsapp.com/send?phone=5551997380151" class="footer-whatsapp">(51) 99738-0151</a></p>
+        <h5>Leco Motos</h5>
+        <!-- <p>Fone: (51) 99453-7661</p> -->
+        <p>Rua Herval Mirim, 499 - Gressler</p>
+        <p>Venâncio Aires/RS</p>
+        <p><a target="_blank" href="https://api.whatsapp.com/send?phone=5551994537661" class="footer-whatsapp">(51) 99453-7661</a></p>
 
       </div>
     </div>

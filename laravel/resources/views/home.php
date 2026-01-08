@@ -62,7 +62,8 @@
 
 
 <div class="map-home">
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13877.413931455552!2d-51.926695699999996!3d-29.5934089!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951c7c0f4ba0223f%3A0xc3471727e0e3aa11!2sJL%20Autom%C3%B3veis!5e0!3m2!1sen!2sbr!4v1713006473327!5m2!1sen!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  <iframe src="https://www.google.com/maps/embed?pb=!4v1767878712908!6m8!1m7!1sI8mu1bxRPbt71ky28YRi1A!2m2!1d-29.61920376538636!2d-52.20240701780288!3f97.94978!4f0!5f0.7820865974627469" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
 
 <?php /*
 <div class="modal modal-popup">

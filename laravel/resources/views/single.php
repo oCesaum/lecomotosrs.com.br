@@ -82,7 +82,7 @@
           </ul>
 
 
-          <a target="_blank" href="https://api.whatsapp.com/send?phone=5551997380151" class="bt-whats">
+          <a target="_blank" href="https://api.whatsapp.com/send?phone=5551994537661" class="bt-whats">
             <i></i> GOSTEI! CONVERSAR PELO WHATS
           </a>
 
@@ -92,7 +92,7 @@
         <div class="proposal-form">
           <form action="<?php echo site_url('proposta'); ?>" method="post" id="proposal-form">
             <input type="hidden" name="veiculo" value="<?php echo $product->title; ?> - <?php echo secure_url($_SERVER['REQUEST_URI']); ?>">
-            <input type="hidden" name="action" value="jlautomoveis_proposta">
+            <input type="hidden" name="action" value="lecomotosrs_proposta">
             <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>" >
             <h4>Envie sua Proposta</h4>
             <p>

@@ -1,7 +1,7 @@
-mv www.lucasautomoveisrs.com.br/* .
-mv www.lucasautomoveisrs.com.br/.* .
-mv www.lucasautomoveisrs.com.br/public/* public/
-mv www.lucasautomoveisrs.com.br/public/.* public/
+mv www.lecomotosrs.com.br/* .
+mv www.lecomotosrs.com.br/.* .
+mv www.lecomotosrs.com.br/public/* public/
+mv www.lecomotosrs.com.br/public/.* public/
 php artisan migrate --force
 php artisan cache:clear
 ls

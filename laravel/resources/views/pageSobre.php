@@ -16,11 +16,11 @@
         clientes.<br>
       </div>
       <div class="col-md-7">
-        <p>A Empresa LUCAS AUTOMÓVEIS tem sua sede na Rua Senador Pinheiro Machado, 3030, na cidade de Bom Retiro do Sul/RS.</p>
+        <p>A Empresa LECO MOTOS tem sua sede na Rua Herval Mirim, 499 - Gressler, na cidade de Venâncio Aires/RS.</p>
         <p>Nossa empresa busca sempre proporcionar para o cliente a melhor experiência de compra e venda do seu veículo, usado e seminovo. A satisfação total dos nossos clientes é nossa prioridade. O objetivo não é só vender veículos, mas proporcionar uma experiência única de confiabilidade na realização do seu negócio.</p>
         <p>Estamos sempre buscando no mercado produtos diferenciados, escolhidos com rigorosa avaliação, com o objetivo único de tornar real o sonho de cada cliente.</p>
         <p>Para isso, prezamos pela confiabilidade da procedência de nossos veículos, pelo bom atendimento, pela ética e transparência nas vendas e pelo atendimento personalizado.</p>
-        <p>Telefone de Contato: (51) 99738-0151</p>
+        <p>Telefone de Contato: (51) 99453-7661</p>
       </div>
 
     </div>
@@ -29,5 +29,5 @@
 </div>
 
 <div class="map-home">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8741.201003669617!2d-51.948339584249055!3d-29.605200961496163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951c7c0f4d61637f%3A0xb4ce353b166251f2!2sR.+Sen.+Pinheiro+Machado%2C+484+-+Centro%2C+Bom+Retiro+do+Sul+-+RS%2C+95870-000!5e0!3m2!1sen!2sbr!4v1536601758973" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!4v1767878712908!6m8!1m7!1sI8mu1bxRPbt71ky28YRi1A!2m2!1d-29.61920376538636!2d-52.20240701780288!3f97.94978!4f0!5f0.7820865974627469" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
