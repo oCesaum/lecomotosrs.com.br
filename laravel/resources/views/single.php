@@ -112,7 +112,8 @@
               <textarea name="proposta" placeholder="Proposta" class="textarea" required></textarea>
             </p>
             <p class="p-button">
-              <button class="g-recaptcha" id="captchaSubmit">Enviar <strong>proposta</strong></button>
+              <div id="captchaSubmit" style="margin-bottom: 15px;"></div>
+              <button type="submit" id="submitBtn">Enviar <strong>proposta</strong></button>
             </p>
           </form>
         </div>
@@ -178,7 +179,8 @@
 
 <script>
 
-  function onSubmitFn(){
+  function onSubmitFn(token){
+    // Quando o reCAPTCHA é validado, envia o formulário
     $('#proposal-form').trigger('submit');
   }
 
@@ -186,16 +188,19 @@
   $('#proposal-form').submit(function(e){
     e.preventDefault();
     var formHandler = $('#proposal-form');
-    formHandler.find('button').attr('disabled','disabled').data('original',formHandler.find('button').text()).text('Aguarde...');
+    var submitBtn = formHandler.find('#submitBtn');
+    submitBtn.attr('disabled','disabled').data('original',submitBtn.text()).text('Aguarde...');
     formHandler.find('[class^="alert"]').remove();
     $.post(formHandler.attr('action'),formHandler.serializeArray(),function(msg){
-      formHandler.find('button').before('<div class="alert-success">'+msg+'</div>');
+      formHandler.find('#submitBtn').before('<div class="alert-success">'+msg+'</div>');
       formHandler.trigger('reset');
     }).fail(function(msg) {
-      formHandler.find('button').before('<div class="alert-fail">'+msg.responseText+'</div>');
+      formHandler.find('#submitBtn').before('<div class="alert-fail">'+msg.responseText+'</div>');
     }).always(function() {
-      formHandler.find('button').removeAttr('disabled').text(formHandler.find('button').data('original'));
-      grecaptcha.reset(captcha_id);
+      submitBtn.removeAttr('disabled').text(submitBtn.data('original'));
+      if(typeof grecaptcha !== 'undefined' && typeof captcha_id !== 'undefined'){
+        grecaptcha.reset(captcha_id);
+      }
     });
   });
 

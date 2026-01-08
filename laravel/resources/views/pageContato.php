@@ -54,7 +54,8 @@
           <p><input name="telefone" type="text" placeholder="Telefone" required></p>
           <p><textarea name="mensagem" placeholder="Mensagem" required></textarea></p>
           <p class="p-button">
-            <button class="g-recaptcha" id="captchaSubmit">Enviar</button>
+            <div id="captchaSubmit" style="margin-bottom: 15px;"></div>
+            <button type="submit" id="submitBtn">Enviar</button>
           </p>
         </form>
       </div>
@@ -118,7 +119,8 @@
 
 </script>
 <script>
-  function onSubmitFn(){
+  function onSubmitFn(token){
+    // Quando o reCAPTCHA é validado, envia o formulário
     $('#contact-form').trigger('submit');
   }
 
@@ -126,16 +128,19 @@
   $('#contact-form').submit(function(e){
     e.preventDefault();
     var formHandler = $('#contact-form');
-    formHandler.find('button').attr('disabled','disabled').data('original',formHandler.find('button').text()).text('Aguarde...');
+    var submitBtn = formHandler.find('#submitBtn');
+    submitBtn.attr('disabled','disabled').data('original',submitBtn.text()).text('Aguarde...');
     formHandler.find('[class^="alert"]').remove();
     $.post(formHandler.attr('action'),formHandler.serializeArray(),function(msg){
-      formHandler.find('button').before('<div class="alert-success">'+msg+'</div>');
+      formHandler.find('#submitBtn').before('<div class="alert-success">'+msg+'</div>');
       formHandler.trigger('reset');
     }).fail(function(msg) {
-      formHandler.find('button').before('<div class="alert-fail">'+msg.responseText+'</div>');
+      formHandler.find('#submitBtn').before('<div class="alert-fail">'+msg.responseText+'</div>');
     }).always(function() {
-      formHandler.find('button').removeAttr('disabled').text(formHandler.find('button').data('original'));
-      grecaptcha.reset(captcha_id);
+      submitBtn.removeAttr('disabled').text(submitBtn.data('original'));
+      if(typeof grecaptcha !== 'undefined' && typeof captcha_id !== 'undefined'){
+        grecaptcha.reset(captcha_id);
+      }
     });
   });
 

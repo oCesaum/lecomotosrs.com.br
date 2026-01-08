@@ -169,47 +169,93 @@ class SiteController extends Controller
     }
 
 
-		public function postContato(Request $request){
-			$post_data =$request->input();
+	public function postContato(Request $request){
+		$post_data = $request->input();
 
-			$curl = curl_init();
-			curl_setopt_array($curl, array(
-				CURLOPT_RETURNTRANSFER => 1,
-				CURLOPT_URL => env('CNV_ADMIN_AJAX'),
-				CURLOPT_POSTFIELDS => http_build_query($post_data),
-				CURLOPT_USERAGENT => 'Codular Sample cURL Request'
-				));
-			$result = curl_exec($curl);
-			curl_close($curl);
+		// Verifica se a URL da API está configurada
+		$apiUrl = env('CNV_ADMIN_AJAX');
+		if(empty($apiUrl)){
+			return response('Erro: URL da API não configurada', 500);
+		}
 
-			if(preg_match('/erro/i',$result)){
-				$statusCode = 400;
-			} else {
-				$statusCode = 200;
-			}
-		  return response($result, $statusCode);
+		$curl = curl_init();
+		curl_setopt_array($curl, array(
+			CURLOPT_RETURNTRANSFER => 1,
+			CURLOPT_URL => $apiUrl,
+			CURLOPT_POST => 1,
+			CURLOPT_POSTFIELDS => http_build_query($post_data),
+			CURLOPT_USERAGENT => 'Leco Motos Contact Form',
+			CURLOPT_HTTPHEADER => array(
+				'Content-Type: application/x-www-form-urlencoded'
+			),
+			CURLOPT_TIMEOUT => 30,
+			CURLOPT_CONNECTTIMEOUT => 10
+		));
+		
+		$result = curl_exec($curl);
+		$httpCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+		$curlError = curl_error($curl);
+		curl_close($curl);
+
+		// Verifica se houve erro no cURL
+		if($result === false || !empty($curlError)){
+			\Log::error('Erro ao enviar formulário de contato: ' . $curlError);
+			return response('Erro ao processar o formulário. Tente novamente mais tarde.', 500);
+		}
+
+		// Verifica se a resposta contém erro
+		if(preg_match('/erro/i', $result)){
+			$statusCode = 400;
+		} else {
+			$statusCode = 200;
+		}
+		
+		return response($result, $statusCode);
     }
 
 
-		public function postProposta(Request $request){
-			$post_data =$request->input();
+	public function postProposta(Request $request){
+		$post_data = $request->input();
 
-			$curl = curl_init();
-			curl_setopt_array($curl, array(
-				CURLOPT_RETURNTRANSFER => 1,
-				CURLOPT_URL => env('CNV_ADMIN_AJAX'),
-				CURLOPT_POSTFIELDS => http_build_query($post_data),
-				CURLOPT_USERAGENT => 'Codular Sample cURL Request'
-				));
-			$result = curl_exec($curl);
-			curl_close($curl);
+		// Verifica se a URL da API está configurada
+		$apiUrl = env('CNV_ADMIN_AJAX');
+		if(empty($apiUrl)){
+			return response('Erro: URL da API não configurada', 500);
+		}
 
-			if(preg_match('/erro/i',$result)){
-				$statusCode = 400;
-			} else {
-				$statusCode = 200;
-			}
-		  return response($result, $statusCode);
+		$curl = curl_init();
+		curl_setopt_array($curl, array(
+			CURLOPT_RETURNTRANSFER => 1,
+			CURLOPT_URL => $apiUrl,
+			CURLOPT_POST => 1,
+			CURLOPT_POSTFIELDS => http_build_query($post_data),
+			CURLOPT_USERAGENT => 'Leco Motos Proposal Form',
+			CURLOPT_HTTPHEADER => array(
+				'Content-Type: application/x-www-form-urlencoded'
+			),
+			CURLOPT_TIMEOUT => 30,
+			CURLOPT_CONNECTTIMEOUT => 10
+		));
+		
+		$result = curl_exec($curl);
+		$httpCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+		$curlError = curl_error($curl);
+		curl_close($curl);
+
+		// Verifica se houve erro no cURL
+		if($result === false || !empty($curlError)){
+			\Log::error('Erro ao enviar formulário de proposta: ' . $curlError);
+			return response('Erro ao processar o formulário. Tente novamente mais tarde.', 500);
+		}
+
+		// Verifica se a resposta contém erro
+		if(preg_match('/erro/i', $result)){
+			$statusCode = 400;
+		} else {
+			$statusCode = 200;
+		}
+		
+		return response($result, $statusCode);
     }
 
 
