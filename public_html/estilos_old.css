@@ -1,0 +1,288 @@
+@font-face {
+    font-family: 'Square';
+    src: url('fontes/square.eot');
+    src: url('fontes/square.eot?#iefix') format('embedded-opentype'),
+         url('fontes/square.woff') format('woff'),
+         url('fontes/square.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* * { box-sizing:border-box; } */
+
+body {
+	width: 100%;
+	margin: 0px;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#333;
+	background:url(imagens/bg.png);
+}
+.trap { display:none; }
+.topo {
+	background: url(imagens/bg_topo.png) top center repeat-x;
+
+}
+.f_topo {
+	font-family: "Square";
+	font-size: 20px;
+	line-height: 30px;
+	color: #666;
+}
+.f_topo1 {
+	font-family: "Square";
+	font-size: 20px;
+	line-height: 20px;
+	color: #666;
+	font-weight: bold;
+}
+.f_gera {
+	font-family: "Square";
+	font-size: 14px;
+	color: #000;
+}
+.f_rodape {
+	font-family: "Square";
+	font-size: 14px;
+	color: #333;
+}
+.f_rodape1 {
+	font-family: "Square";
+	font-size: 16px;
+	color: #CC0000;
+	margim: 10px;
+}
+.f_titulo {
+	font-family: "Square";
+	font-size: 18px;
+	color: #333;
+}
+.menu {
+	font-family: "Square";
+	font-size: 18px;
+	color: #fff;
+	font-weight: bold;
+	text-decoration:none;
+}
+a.menu:hover {
+	text-decoration:none;
+	color: #ffff00;
+}
+.f_veiculo{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color: #CC0000;
+}
+.imagelink {
+	border: #cccccc 1px solid;
+}
+.linkmodelo {
+	font-family: Tahoma,Arial;
+	font-size: 13px;
+	color: #000000;
+	text-decoration:none;
+}
+a.linkmodelo:hover {
+	text-decoration:none;
+}
+
+a.linkmenu:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #005EAA;
+	line-height:13px;
+	text-decoration:none;
+}
+
+a.linkmenu:visited {
+	text-decoration:none;
+}
+
+a.linkmenu:hover {
+	text-decoration:none;
+	color: #666;
+}
+
+.text-fique {
+	width: 186px;
+	height: 34px;
+	padding: 9px;
+	font-size: 14px;
+	color: #333;
+	background: #999;
+	margin-right: 10px;
+	border: 1px solid #888;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+	font-family: 'Square', sans-serif;
+	float: left;
+}
+
+.text-fique:focus {outline: none; background-color: #666; color: #fff;}
+
+.form-newsletter button {
+	width: 100px;
+	padding: 8px;
+	font-family: 'Square', sans-serif;
+	color: #fff;
+	background: url('imagens/back-botao.jpg') repeat-x;
+	border: none;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.form-newsletter button:hover { background-position: 0 -32px; }
+
+.imagem {
+        position: relative;
+}
+
+.moto {
+	display: block;
+	float: right;
+	width: 350px;
+	height: 309px;
+	background: url(imagens/mot.png) no-repeat;
+	overflow: hidden;
+	text-indent: -9999px;
+	top: -280px;
+    left: 610px;
+	position: absolute;
+}
+
+/*==========================================================*/
+/*	VEÍCULO								              		*/
+/*==========================================================*/
+
+.boxveiculo{
+	width:225px;
+	height:220px;
+	float:left;
+	margin:3px 7px;
+}
+.boxveiculo .bg_foto{
+	width:225px;
+	height:178px;
+	background:url(imagens/bg-foto.png);
+}
+.boxveiculo .bg_foto img{
+	width:184px;
+	height:138px;
+	margin:20px 0 0 2px;
+}
+.boxveiculo .tit{
+	font-size:14px;
+	color: #C00;
+	font-weight:bold;
+	text-align:center;
+	padding:0;
+	margin:0
+}
+.boxveiculo .inf{
+	font-size:14px;
+	color:#333;
+	text-align:center;
+	padding:0;
+	margin:0
+}
+
+/*==========================================================*/
+/*	DETALHES								              		*/
+/*==========================================================*/
+span {text-align:left; font-size:13px}
+.lista{padding:7px 10px; background: #F2F2F2; border-bottom:solid 1px #EBEBEB; margin-bottom:4px; text-align:left;}
+.lista-esq{
+	width:80px;
+	display:inline-block;
+
+}
+.lista-dir{
+	width:200px;
+	display:inline-block;
+}
+/*==========================================================*/
+/*	FORMULÁRIOS							              		*/
+/*==========================================================*/
+
+.f-form {
+	text-align:left;
+	font-family: "swiss";
+	font-size: 14px;
+	color: #333;
+}
+.forms {
+	padding: 5px;
+	font-size: 13px;
+	margin-right:10px;
+	color: #333;
+	background: #eee;
+	border: 1px solid #888;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+	font-family: 'swiss';
+}
+.forms:focus {outline: none; background-color: #fff; color: #666;}
+
+
+form button {
+  border: 0;
+  border-radius: 5px;
+  color: #ccc;
+  background-color: #221;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 5px 10px;
+	cursor:pointer;
+}
+
+form button[disabled] {
+	cursor:default;
+	background-color:#555;
+}
+
+.form-newsletter { position:relative; z-index:2; }
+.form-newsletter * { box-sizing:border-box; }
+
+
+.form-newsletter input::-webkit-input-placeholder{color: #444; }
+.form-newsletter input::-moz-placeholder{color: #444; } /* Firefox 19+ */
+.form-newsletter input:-ms-input-placeholder{color: #444; } /* IE 10+ */
+.form-newsletter input:-moz-placeholder{color: #444; } /* Firefox 18- */
+.form-newsletter input::placeholder {color: #444; }
+
+
+
+.submit-busca{
+	background:url(imagens/bt-buscar.png) transparent;
+	width:102px;
+	height:40px;
+	border:none;
+	cursor:pointer;
+	margin-bottom:5px;
+}
+
+.alert-success { clear:both; padding: 20px; background-color: #9C9; text-align: center; margin-bottom:20px; }
+.alert-fail { clear:both; padding: 20px; background-color: #c44;color:#fff; text-align: center; margin-bottom:20px; }
+
+
+.grecaptcha-badge{
+	display:none
+}

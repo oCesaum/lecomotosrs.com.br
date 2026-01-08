@@ -1,0 +1,51 @@
+Guilherme,
+
+vamos fazer o site da revenda Confiança Veículos de Bom Retiro do Sul.
+
+OK modelar o site > https://www.autoshowrs.com.br
+
+> whatsapp coloca > 51 99738-0151
+
+OK logotipo em anexo
+
+> pode puxar os veiculos do cadastro particular "lucas garcia" que tem liberado para incluir mais veiculos
+
+> na home, abaixo da barrinha de busca terá a informação:
+CONFIRA OS DESTAQUES:
+OS VEÍCULOS DE MAIS DESTAQUES EM NOSSO ESTOQUE!
+
+abaixo disso, coloca 3 colunas de 3 linhas cada, totalizando 9 veiculos... abaixo coloca o mapa (poem o endereço do centro de bom retiro por que o cliente está definindo) e abaixo o rodapé..... cores principais vermelho e preto
+
+
+
+-----------------
+
+
+OK whats 51 99738-0151
+OK cores vermelho e preto
+OK Confiança Veículos de Bom Retiro do Sul.
+
+
+preciso saber o endereco
+
+
+
+
+
+[ X ] logo-email.jpg
+[ X ] favicon.ico
+[ X ] SEO (Revenda de veículos. Carros seminovos de todas as marcas. Acesse nosso site e conheça o nosso estoque.)
+[ X ] formularios identificados
+[ X ] CNV - api veiculos
+[ X ] sitemap
+[ X ] google captcha
+[ X ] analytics
+[ X ] forge - banco de dados novo
+[ X ] forge - .env com api oficial (52.67.252.16)
+[ x ] cloudflare - ssl flexible
+[ x ] cloudflare always on https
+[ x ] google webmaster tools sitemap
+[ X ] testar formularios - com a api de teste
+[ X ] adicionar na planilha de suporte
+[ x ] remover banco de dados e site teste
+[ X ] registro.br com acesso ao henrique
