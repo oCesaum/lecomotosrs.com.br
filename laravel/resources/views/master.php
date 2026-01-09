@@ -8,7 +8,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<?php $title = $title ? $title.' - Leco Motos':'Leco Motos - Bom Retiro do Sul/RS'; ?>
+	<?php $title = $title ? $title.' - Leco Motos':'Leco Motos - Venâncio Aires/RS'; ?>
 	<title><?php echo $title; ?></title>
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans:300,400,600,700,800">
@@ -91,7 +91,7 @@ src="https://www.facebook.com/tr?id=303577118019952&ev=PageView&noscript=1"
 			</h1>
 
 			<div class="header-contact">
-				<p>Bom Retiro do Sul/RS</p>
+				<p>Venâncio Aires/RS</p>
 				<p><a target="_blank" href="https://api.whatsapp.com/send?phone=5551994537661" class="header-whatsapp">(51) 99453-7661</a></p>
 			</div>
 
