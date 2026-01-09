@@ -89,7 +89,8 @@ class SiteController extends Controller
     	}
 
     	if(!empty($get_data['termo'])){
-    		$query->whereRaw("MATCH(title) against('{$get_data['termo']}') > 0");
+    		$termo = $get_data['termo'];
+    		$query->where('title', 'LIKE', '%' . $termo . '%');
     	}
 
 			$products = $query->orderBy('id')->get();
