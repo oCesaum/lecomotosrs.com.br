@@ -269,8 +269,9 @@ src="https://www.facebook.com/tr?id=303577118019952&ev=PageView&noscript=1"
 var captcha_id;
   var onloadCaptcha = function() {
   	if(jQuery('#captchaSubmit').length==0) return;
+  	if(typeof captcha_id !== 'undefined' && captcha_id !== null) return; // Evita renderização múltipla
     captcha_id = grecaptcha.render('captchaSubmit', {
-      'sitekey' : '6LdBLSsUAAAAADxTzVH4IecNAvz73mdfidHJh7LX',
+      'sitekey' : '6LdAdEUsAAAAADHV8ER7sfBBErFnaszQzvzcjIOc',
       'callback' : onSubmitFn
     });
   };

@@ -113,7 +113,7 @@
             </p>
             <p class="p-button">
               <div id="captchaSubmit" style="margin-bottom: 15px;"></div>
-              <button type="submit" id="submitBtn">Enviar <strong>proposta</strong></button>
+              <button type="submit" id="submitBtn" disabled>Enviar <strong>proposta</strong></button>
             </p>
           </form>
         </div>
@@ -180,8 +180,8 @@
 <script>
 
   function onSubmitFn(token){
-    // Quando o reCAPTCHA é validado, envia o formulário
-    $('#proposal-form').trigger('submit');
+    // Quando o reCAPTCHA é validado, habilita o botão
+    $('#submitBtn').prop('disabled', false);
   }
 
   /* Formulários de contato */
@@ -200,6 +200,7 @@
       submitBtn.removeAttr('disabled').text(submitBtn.data('original'));
       if(typeof grecaptcha !== 'undefined' && typeof captcha_id !== 'undefined'){
         grecaptcha.reset(captcha_id);
+        $('#submitBtn').prop('disabled', true); // Desabilita após reset
       }
     });
   });
